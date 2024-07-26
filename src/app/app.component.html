@@ -1,8 +1,8 @@
 <h1>{{title}}</h1>
 <ul>
-  @for (forecast of forecasts; track $index) {
+  @for (user of users; track $index) {
     <li>
-      {{forecast.date}} | {{forecast.summary}} | {{forecast.temperatureC}} | {{forecast.temperatureF}}
+      {{user.id}} | {{user.userName}} 
     </li>
   }
 </ul>
